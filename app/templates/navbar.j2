@@ -1,0 +1,20 @@
+<ul class="nav nav-underline">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="/">Marvelousian's</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{{url_for('main.home')}}">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{{url_for('auth.signin')}}">Sign In</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{{url_for('auth.register')}}">Register</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{{url_for('marvel.user_page', username=current_user.username)}}">Your Space</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{{url_for('marvel.hero')}}">Heroes</a>
+  </li>
+</ul>

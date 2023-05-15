@@ -1,0 +1,10 @@
+{% extends "base.j2" %}
+
+{% block content %}
+<h3>{{ user.username }}'s Page</h3>
+
+{% for hero in user.marvel_char %}
+  <p>{{ hero.name }}</p>
+  <small>{{ hero.super_powers }}</small>
+{% endfor %}
+{% endblock %}
